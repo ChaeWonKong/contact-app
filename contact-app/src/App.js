@@ -6,7 +6,18 @@ class App extends Component {
 
 	id = 0;
 	state = {
-		information: []
+		information: [
+			{
+				id: 0,
+				name: "공채원",
+				phone: "010-2232-4616",
+			},
+			{
+				id: 1,
+				name: "박상아",
+				phone: "010-2601-0885",
+			}
+		]
 	}
 
 	handleCreate = (data) => {
