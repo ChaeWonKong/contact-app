@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     fontWeight: "500"
   },
   card: {
-    flex: 6,
+    flex: 7,
     ...Platform.select({
       ios: {
         shadowColor: "rgb(50, 50, 50)",
@@ -71,7 +71,8 @@ const styles = StyleSheet.create({
   },
   imgStyle: {
     flex: 1,
-    marginTop: 30,
+    marginTop: 20,
+    marginBottom: 20,
     width: width - 50
   },
   footer: {
