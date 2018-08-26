@@ -7,10 +7,9 @@ import {
   TouchableOpacity,
   Dimensions
 } from "react-native";
-import { fontAwesome } from "@expo/vector-icons";
-import FontAwesome from "./node_modules/@expo/vector-icons/FontAwesome";
+import { FontAwesome } from "@expo/vector-icons";
 
-const { width, height } = Dimensions.get("window");
+const { width } = Dimensions.get("window");
 
 export default class TabMenu extends Component {
   render() {
