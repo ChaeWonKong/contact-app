@@ -11,7 +11,7 @@ import {
 } from "react-native";
 import TabMenu from "./TabMenu";
 
-const { width, height } = Dimensions.get("window");
+const { width } = Dimensions.get("window");
 
 export default class App extends React.Component {
   render() {
