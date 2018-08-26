@@ -7,6 +7,8 @@ import {
   TouchableOpacity,
   Dimensions
 } from "react-native";
+import { fontAwesome } from "@expo/vector-icons";
+import FontAwesome from "./node_modules/@expo/vector-icons/FontAwesome";
 
 const { width, height } = Dimensions.get("window");
 
@@ -15,13 +17,16 @@ export default class TabMenu extends Component {
     return (
       <View style={styles.container}>
         <TouchableOpacity style={styles.explore}>
-          <Text>Explore</Text>
+          <FontAwesome name={"search"} size={20} color="#bbb" />
+          <Text style={styles.text}>Explore</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.list}>
-          <Text>List</Text>
+          <FontAwesome name={"list"} size={20} color="#bbb" />
+          <Text style={styles.text}>List</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.me}>
-          <Text>Me</Text>
+          <FontAwesome name={"user-circle-o"} size={20} color="#bbb" />
+          <Text style={styles.text}>Me</Text>
         </TouchableOpacity>
       </View>
     );
@@ -45,5 +50,9 @@ const styles = StyleSheet.create({
   me: {
     flex: 1,
     alignItems: "center"
+  },
+  text: {
+    marginTop: 10,
+    color: "#bbb"
   }
 });
