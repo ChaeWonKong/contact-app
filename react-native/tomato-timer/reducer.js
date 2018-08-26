@@ -38,6 +38,8 @@ function reducer(state = initialState, action) {
       return applyRestartTimer(state, action);
     case ADD_SECOND:
       return applyAddSecond(state);
+    default:
+      return state;
   }
 }
 
