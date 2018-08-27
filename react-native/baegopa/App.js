@@ -9,23 +9,32 @@ import {
   StatusBar,
   Platform
 } from "react-native";
-import TabMenu from "./TabMenu";
+import Navigation from "./components/Navigation";
 
 const { width } = Dimensions.get("window");
+const foodData = {
+  name: "달빛창가 302호",
+  img: require("./img/2.png")
+};
 
 export default class App extends React.Component {
+  state = {
+    name: foodData.name,
+    img: foodData.img
+  };
   render() {
+    const { name, img } = this.state;
     return (
       <View style={styles.container}>
         <StatusBar barStyle={"light-content"} />
         <View style={styles.header}>
-          <Text style={styles.text}>달빛창가 302호</Text>
+          <Text style={styles.text}>{name}</Text>
         </View>
         <TouchableOpacity style={styles.card}>
-          <Image source={require("./img/2.png")} style={styles.imgStyle} />
+          <Image source={img} style={styles.imgStyle} />
         </TouchableOpacity>
         <View style={styles.footer}>
-          <TabMenu />
+          <Navigation />
         </View>
       </View>
     );

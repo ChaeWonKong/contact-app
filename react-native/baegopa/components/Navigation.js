@@ -10,7 +10,7 @@ import { FontAwesome } from "@expo/vector-icons";
 
 const { width } = Dimensions.get("window");
 
-export default class TabMenu extends Component {
+export default class Navigation extends Component {
   render() {
     return (
       <View style={styles.container}>
