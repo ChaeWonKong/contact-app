@@ -30,7 +30,7 @@ export default class App extends React.Component {
         <View style={styles.header}>
           <Text style={styles.text}>{name}</Text>
         </View>
-        <TouchableOpacity style={styles.card}>
+        <TouchableOpacity style={styles.card} activeOpacity={0.8}>
           <Image source={img} style={styles.imgStyle} />
         </TouchableOpacity>
         <View style={styles.footer}>

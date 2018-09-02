@@ -9,20 +9,24 @@ import {
 import { FontAwesome } from "@expo/vector-icons";
 
 const { width } = Dimensions.get("window");
+const activeOpacityVal = 0.6;
 
 export default class Navigation extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <TouchableOpacity style={styles.explore}>
+        <TouchableOpacity
+          activeOpacity={activeOpacityVal}
+          style={styles.explore}
+        >
           <FontAwesome name={"search"} size={20} color="#bbb" />
           <Text style={styles.text}>Explore</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.list}>
+        <TouchableOpacity activeOpacity={activeOpacityVal} style={styles.list}>
           <FontAwesome name={"list"} size={20} color="#bbb" />
           <Text style={styles.text}>List</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.me}>
+        <TouchableOpacity activeOpacity={activeOpacityVal} style={styles.me}>
           <FontAwesome name={"user-circle-o"} size={20} color="#bbb" />
           <Text style={styles.text}>Me</Text>
         </TouchableOpacity>
