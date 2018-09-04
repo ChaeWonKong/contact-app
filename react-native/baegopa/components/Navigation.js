@@ -4,7 +4,8 @@ import {
   Text,
   StyleSheet,
   TouchableOpacity,
-  Dimensions
+  Dimensions,
+  Platform
 } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 
@@ -12,24 +13,28 @@ const { width } = Dimensions.get("window");
 const activeOpacityVal = 0.6;
 
 export default class Navigation extends Component {
+  state = {
+    isSwipingMode: true
+  };
   render() {
+    const { isSwipingMode } = this.state;
     return (
       <View style={styles.container}>
-        <TouchableOpacity
-          activeOpacity={activeOpacityVal}
-          style={styles.explore}
-        >
-          <FontAwesome name={"search"} size={20} color="#bbb" />
-          <Text style={styles.text}>Explore</Text>
-        </TouchableOpacity>
-        <TouchableOpacity activeOpacity={activeOpacityVal} style={styles.list}>
-          <FontAwesome name={"list"} size={20} color="#bbb" />
-          <Text style={styles.text}>List</Text>
-        </TouchableOpacity>
-        <TouchableOpacity activeOpacity={activeOpacityVal} style={styles.me}>
-          <FontAwesome name={"user-circle-o"} size={20} color="#bbb" />
-          <Text style={styles.text}>Me</Text>
-        </TouchableOpacity>
+        {isSwipingMode ? (
+          <TouchableOpacity
+            style={styles.list}
+            activeOpacity={activeOpacityVal}
+          >
+            <FontAwesome name={"list"} size={20} color="white" />
+          </TouchableOpacity>
+        ) : (
+          <TouchableOpacity
+            style={styles.explore}
+            activeOpacity={activeOpacityVal}
+          >
+            <FontAwesome name={"search"} size={20} color="white" />
+          </TouchableOpacity>
+        )}
       </View>
     );
   }
@@ -41,20 +46,52 @@ const styles = StyleSheet.create({
     width: width,
     alignItems: "center"
   },
-  explore: {
-    flex: 1,
-    alignItems: "center"
-  },
-  list: {
-    flex: 1,
-    alignItems: "center"
-  },
-  me: {
-    flex: 1,
-    alignItems: "center"
-  },
   text: {
     marginTop: 10,
     color: "#bbb"
+  },
+  explore: {
+    alignItems: "center",
+    justifyContent: "center",
+    width: 64,
+    height: 64,
+    borderRadius: 32,
+    backgroundColor: "#d32323",
+    ...Platform.select({
+      ios: {
+        shadowColor: "rgb(50, 50, 50)",
+        shadowOpacity: 0.7,
+        shadowRadius: 5,
+        shadowOffset: {
+          height: 5,
+          width: 0
+        }
+      },
+      android: {
+        elevation: 2
+      }
+    })
+  },
+  list: {
+    alignItems: "center",
+    justifyContent: "center",
+    width: 64,
+    height: 64,
+    borderRadius: 32,
+    backgroundColor: "#d32323",
+    ...Platform.select({
+      ios: {
+        shadowColor: "rgb(50, 50, 50)",
+        shadowOpacity: 0.7,
+        shadowRadius: 5,
+        shadowOffset: {
+          height: 5,
+          width: 0
+        }
+      },
+      android: {
+        elevation: 2
+      }
+    })
   }
 });

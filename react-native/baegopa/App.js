@@ -11,7 +11,7 @@ import {
 } from "react-native";
 import Navigation from "./components/Navigation";
 
-const { width } = Dimensions.get("window");
+const { width, height } = Dimensions.get("window");
 const foodData = {
   name: "달빛창가 302호",
   img: require("./img/2.png")
@@ -33,7 +33,7 @@ export default class App extends React.Component {
         <TouchableOpacity style={styles.card} activeOpacity={0.8}>
           <Image source={img} style={styles.imgStyle} />
         </TouchableOpacity>
-        <View style={styles.footer}>
+        <View style={styles.floatButton}>
           <Navigation />
         </View>
       </View>
@@ -63,6 +63,7 @@ const styles = StyleSheet.create({
   },
   card: {
     flex: 7,
+    marginBottom: 50,
     ...Platform.select({
       ios: {
         shadowColor: "rgb(50, 50, 50)",
@@ -82,11 +83,11 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 20,
     marginBottom: 20,
-    width: width - 50
+    width: width - 20
   },
-  footer: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center"
+  floatButton: {
+    position: "absolute",
+    top: height - 140,
+    left: width - 80
   }
 });
