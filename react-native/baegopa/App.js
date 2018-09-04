@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
   },
   card: {
     flex: 7,
-    marginBottom: 50,
+    marginBottom: 30,
     ...Platform.select({
       ios: {
         shadowColor: "rgb(50, 50, 50)",
@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
   },
   floatButton: {
     position: "absolute",
-    top: height - 140,
+    top: height - 120,
     left: width - 80
   }
 });
