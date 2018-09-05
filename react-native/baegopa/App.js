@@ -16,29 +16,52 @@ import { FontAwesome } from "@expo/vector-icons";
 const { width, height } = Dimensions.get("window");
 const foodData = [
   {
-    name: "흑돼지 삼겹살",
-    img: require("./img/1.png"),
-    status: ""
+    name: "케이크야",
+    img: require("./img/1.png")
   },
   {
     name: "달빛창가 302호",
-    img: require("./img/2.png"),
-    status: ""
+    img: require("./img/2.png")
   },
   {
     name: "오가네 갈비",
-    img: require("./img/3.png"),
-    status: ""
+    img: require("./img/3.png")
   },
   {
-    name: "과일빙수",
-    img: require("./img/4.png"),
-    status: ""
+    name: "브이",
+    img: require("./img/4.png")
   },
   {
-    name: "고등어회",
-    img: require("./img/5.png"),
-    status: ""
+    name: "드렁큰 샐러드",
+    img: require("./img/5.png")
+  },
+  {
+    name: "계절소반",
+    img: require("./img/6.png")
+  },
+  {
+    name: "딥 블루 씨",
+    img: require("./img/7.png")
+  },
+  {
+    name: "라따뚜이",
+    img: require("./img/8.png")
+  },
+  {
+    name: "Caprice",
+    img: require("./img/9.png")
+  },
+  {
+    name: "Vi Va La France",
+    img: require("./img/10.png")
+  },
+  {
+    name: "English Breakfast",
+    img: require("./img/11.png")
+  },
+  {
+    name: "Simplest Kitchen",
+    img: require("./img/12.png")
   }
 ];
 
@@ -157,7 +180,8 @@ const styles = StyleSheet.create({
   imgStyle: {
     flex: 1,
     marginTop: 20,
-    width: width - 20
+    width: width - 20,
+    borderRadius: 10
   },
   floatButton: {
     position: "absolute",
