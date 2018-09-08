@@ -22,6 +22,25 @@
   font-size: large;
 }
 
+.editor {
+
+}
+
+.contents {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleText {
+  min-width: 500px
+}
+
+.conText {
+  min-width: 500px
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
