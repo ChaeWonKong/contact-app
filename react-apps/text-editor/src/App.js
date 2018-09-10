@@ -6,7 +6,7 @@ class App extends Component {
   state = {
     post: {
       title: "",
-      content: ""
+      text: ""
     }
   };
   render() {

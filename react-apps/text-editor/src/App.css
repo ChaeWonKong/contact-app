@@ -34,7 +34,8 @@
 }
 
 .titleText {
-  min-width: 500px
+  min-width: 500px;
+  border: none;
 }
 
 .conText {
