@@ -1,19 +1,29 @@
 import React, { Component } from "react";
 import UserList from "./UserList";
-import { Map, List } from "../node_modules/immutable";
+import { Map, List, Record } from "../node_modules/immutable";
+
+const User = Record({
+  id: null,
+  username: null
+});
+
+const Data = Record({
+  input: "",
+  users: List()
+});
 
 class App extends Component {
   id = 3;
 
   state = {
-    data: Map({
+    data: Data({
       input: "",
       users: List([
-        Map({
+        User({
           id: 1,
           username: "velopert"
         }),
-        Map({
+        User({
           id: 2,
           username: "mjkim"
         })
@@ -34,7 +44,7 @@ class App extends Component {
     this.setState({
       data: data.set("input", "").update("users", users =>
         users.push(
-          Map({
+          new User({
             id: this.id++,
             username: data.get("input")
           })
@@ -45,9 +55,9 @@ class App extends Component {
 
   render() {
     const { onChange, onButtonClick } = this;
-    const { data } = this.state;
-    const input = data.get("input");
-    const users = data.get("users");
+    const {
+      data: { input, users }
+    } = this.state;
 
     return (
       <div>
