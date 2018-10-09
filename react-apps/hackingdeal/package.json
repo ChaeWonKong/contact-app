@@ -1,0 +1,8 @@
+{
+  "name": "Hackingdeal",
+  "version": "1.0.0",
+  "description": "Hackingdeal with React",
+  "main": "index.js",
+  "author": "Leon Kong",
+  "license": "MIT"
+}
