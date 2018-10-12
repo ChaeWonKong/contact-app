@@ -10,7 +10,7 @@ class App extends Component {
           <nav>
             <div className="nav-wrapper">
               <a href="#" class="brand-logo">
-                Hackingdeal
+                leonkong.com
               </a>
               <ul id="nav-mobile" className="right hide-on-med-and-down">
                 <li>
