@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
-require("materialize-css");
+
+import PostList from "./components/PostList";
 
 class App extends Component {
   render() {
@@ -26,7 +27,7 @@ class App extends Component {
             </div>
           </nav>
         </div>
-        <div className="lorem" />
+        <PostList />
       </div>
     );
   }
