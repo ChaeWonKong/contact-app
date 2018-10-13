@@ -1,16 +1,18 @@
 import React, { Component } from "react";
 
 import Header from "../components/Header";
+import PostList from "./PostList";
+import About from "./About";
 
-class About extends Component {
+class Home extends Component {
   render() {
     return (
       <div>
         <Header />
-        About me
+        <PostList />
       </div>
     );
   }
 }
 
-export default About;
+export default Home;
