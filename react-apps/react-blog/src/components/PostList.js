@@ -6,7 +6,10 @@ class PostList extends Component {
       <div class="col s12 m7">
         <div class="card horizontal">
           <div class="card-image">
-            <img src="https://source.unsplash.com/random/300x150" />
+            <img
+              alt="pixabay-random"
+              src="https://source.unsplash.com/random/300x200"
+            />
           </div>
           <div class="card-stacked">
             <div class="card-content">
@@ -16,7 +19,7 @@ class PostList extends Component {
               </p>
             </div>
             <div class="card-action">
-              <a href="#">This is a link</a>
+              <a href="/">This is a link</a>
             </div>
           </div>
         </div>
