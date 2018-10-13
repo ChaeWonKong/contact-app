@@ -6,7 +6,7 @@ class PostList extends Component {
       <div class="col s12 m7">
         <div class="card horizontal">
           <div class="card-image">
-            <img src="https://cdn.pixabay.com/photo/2017/05/29/16/42/woman-2354157_1280.jpg" />
+            <img src="https://source.unsplash.com/random/300x150" />
           </div>
           <div class="card-stacked">
             <div class="card-content">
