@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./App.css";
-
 import PostList from "./components/PostList";
 
 class App extends Component {
@@ -10,7 +9,7 @@ class App extends Component {
         <div className="navbar-fixed">
           <nav>
             <div className="nav-wrapper">
-              <a href="/" class="brand-logo">
+              <a href="/" className="brand-logo">
                 leonkong.com
               </a>
               <ul id="nav-mobile" className="right hide-on-med-and-down">
