@@ -7,9 +7,10 @@ const Footer = () => (
     <div className="container">
       <div className="row">
         <div className="col l6 s12">
-          <h5 className="black-text">Footer Content</h5>
+          <h5 className="black-text">Leon Kong's Blog</h5>
           <p className="black-text text-lighten-4">
-            You can use rows and columns here to organize your footer content.
+            Do or do not. There's no try. A bit of minimalism with a slice of
+            technology.
           </p>
         </div>
         <div className="col l4 offset-l2 s12">
@@ -17,22 +18,22 @@ const Footer = () => (
           <ul>
             <li>
               <a className="black-text text-lighten-3" href="#!">
-                Link 1
+                ABOUT
               </a>
             </li>
             <li>
               <a className="black-text text-lighten-3" href="#!">
-                Link 2
+                ALGORITHM
               </a>
             </li>
             <li>
               <a className="black-text text-lighten-3" href="#!">
-                Link 3
+                DEV
               </a>
             </li>
             <li>
               <a className="black-text text-lighten-3" href="#!">
-                Link 4
+                PROJECTS
               </a>
             </li>
           </ul>
@@ -41,7 +42,7 @@ const Footer = () => (
     </div>
     <div className="footer-copyright">
       <div className="container">
-        © 2014 Copyright Text
+        © 2018 Copyright LeonKong
         <a className="black-text text-lighten-4 right" href="#!">
           More Links
         </a>
