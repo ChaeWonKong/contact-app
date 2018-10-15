@@ -7,21 +7,17 @@
 .layout-children {
     max-width: 1200px;
 }
+  
+.card-image {
+  width: 300px;
+}
 
-.nav-wrapper {
-    background: linear-gradient(90deg,#976eff,#dc6ae8);
-  }
-  
-  .card-image {
-    width: 300px;
-  }
-  
-  .col {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-  }
-  
-  .card, horizontal {
-    width: 1200px;
-  }
+.col {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card, horizontal {
+  width: 1200px;
+}
