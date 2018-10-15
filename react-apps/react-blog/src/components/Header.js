@@ -11,6 +11,7 @@ class Header extends Component {
             <Link to="/" className="brand-logo">
               leonkong.com
             </Link>
+
             <ul id="nav-mobile" className="right hide-on-med-and-down">
               <li>
                 <Link to="/about">ABOUT</Link>

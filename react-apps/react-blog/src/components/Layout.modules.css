@@ -21,3 +21,8 @@
 .card, horizontal {
   width: 1200px;
 }
+
+.input-field, col, s12 {
+  width: 200px;
+  align-self: flex-start;
+}
