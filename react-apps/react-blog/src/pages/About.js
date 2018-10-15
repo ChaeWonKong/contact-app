@@ -1,14 +1,38 @@
 import React, { Component } from "react";
 
-import Header from "../components/Header";
+import Layout from "../components/Layout";
 
 class About extends Component {
   render() {
     return (
-      <div>
-        <Header />
-        About me
-      </div>
+      <Layout>
+        <div>
+          About me. About me. About me. About me. About me. About me. About me.
+          About me. About me. About me. About me. About me.About me.About me.
+          About me. About me. About me. About me. About me. About me. About me.
+          About me. About me. About me. About me. About me. About me. About me.
+          About me. About me.About me.About me. About me. About me. About me.
+          About me. About me. About me. About me. About me. About me. About me.
+          About me. About me. About me. About me. About me. About me.About
+          me.About me. About me. About me. About me. About me. About me. About
+          me. About me. About me. About me. About me. About me. About me. About
+          me. About me. About me. About me.About me.About me. About me. About
+          me. About me. About me. About me. About me. About me. About me. About
+          me. About me. About me. About me. About me. About me. About me. About
+          me.About me.About me. About me. About me. About me. About me. About
+          me. About me. About me. About me. About me. About me. About me. About
+          me. About me. About me. About me. About me.About me.About me. About
+          me. About me. About me. About me. About me. About me. About me. About
+          me. About me. About me. About me. About me. About me. About me. About
+          me. About me.About me.About me. About me. About me. About me. About
+          me. About me. About me. About me. About me. About me. About me. About
+          me. About me. About me. About me. About me. About me.About me.About
+          me. About me. About me. About me. About me. About me. About me. About
+          me. About me. About me. About me. About me. About me. About me. About
+          me. About me. About me.About me.About me. About me. About me. About
+          me. About me.
+        </div>
+      </Layout>
     );
   }
 }

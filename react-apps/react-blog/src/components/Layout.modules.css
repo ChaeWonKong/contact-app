@@ -1,0 +1,27 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.layout-children {
+    max-width: 1200px;
+}
+
+.nav-wrapper {
+    background: linear-gradient(90deg,#976eff,#dc6ae8);
+  }
+  
+  .card-image {
+    width: 300px;
+  }
+  
+  .col {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .card, horizontal {
+    width: 1200px;
+  }

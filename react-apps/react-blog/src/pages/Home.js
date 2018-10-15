@@ -1,16 +1,14 @@
 import React, { Component } from "react";
 
-import Header from "../components/Header";
 import PostList from "./PostList";
-import About from "./About";
+import Layout from "../components/Layout";
 
 class Home extends Component {
   render() {
     return (
-      <div>
-        <Header />
+      <Layout>
         <PostList />
-      </div>
+      </Layout>
     );
   }
 }
