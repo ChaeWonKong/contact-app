@@ -1,5 +1,7 @@
 .nav-wrapper {
     background: linear-gradient(90deg,#976eff,#dc6ae8);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .input-field, col, s12 {
