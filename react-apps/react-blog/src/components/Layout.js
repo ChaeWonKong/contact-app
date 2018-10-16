@@ -9,8 +9,8 @@ const Layout = ({ children }) => (
     <div className="layout">
       <div className="layout-children">
         <div className="input-field col s12">
-          <input id="search" type="text" class="validate" />
-          <label for="search">Search Posts</label>
+          <input id="search" type="text" className="validate" />
+          <label htmlFor="search">Search Posts</label>
         </div>
         {children}
       </div>
