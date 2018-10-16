@@ -1,9 +1,9 @@
 import React from "react";
 import "./Footer.modules.css";
+import { github } from "../images";
 
 const Footer = () => (
   <footer className="page-footer">
-    <hr className="footer-hr" />
     <div className="container">
       <div className="row">
         <div className="col l6 s12">
@@ -43,8 +43,11 @@ const Footer = () => (
     <div className="footer-copyright">
       <div className="container">
         © 2018 Copyright LeonKong
-        <a className="black-text text-lighten-4 right" href="#!">
-          GITHUB
+        <a
+          className="black-text text-lighten-4 right"
+          href="https://github.com/chaewonkong"
+        >
+          <img src={github} width="24px" alt="github" />
         </a>
       </div>
     </div>

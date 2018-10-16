@@ -2,8 +2,7 @@
     bottom: 0;
     position: fixed;
     width: 100%;
-    /* background: linear-gradient(90deg,#976eff,#dc6ae8); */
-    background: white;
+    background: #eee;
     color: black;
 }
 
@@ -11,15 +10,18 @@
     margin-left: 30px;
 }
 
-.footer-hr {
-    width: 96%;
-    border: 1px solid #bbb;
-}
-
 .container {
     color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container > a {
+    display: flex;
+    align-items: center;
 }
 
 .footer-copyright {
-    background: #d8d2e9;
+    background: #ddd;
 }

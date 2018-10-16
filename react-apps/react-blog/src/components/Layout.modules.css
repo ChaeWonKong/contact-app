@@ -9,7 +9,7 @@
 }
   
 .card-image {
-  width: 300px;
+  width: 360px;;
 }
 
 .col {
@@ -25,4 +25,24 @@
 .input-field, col, s12 {
   width: 400px;
   align-self: flex-start;
+}
+
+.list-title-div {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-title {
+  font-weight: bold;
+}
+
+.list-date {
+  margin-left: 20px;
+  color: #ccc;
+}
+
+.list-content {
+  text-align: justify;
 }

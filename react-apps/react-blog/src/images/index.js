@@ -1,0 +1,9 @@
+export { default as dev1 } from "./dev1.jpg";
+export { default as dev2 } from "./dev2.jpg";
+export { default as dev3 } from "./dev3.jpg";
+export { default as dev4 } from "./dev4.png";
+export { default as dev5 } from "./dev5.jpg";
+export { default as dev6 } from "./dev6.jpg";
+export { default as python } from "./python.png";
+export { default as react } from "./react.png";
+export { default as github } from "./github.png";
