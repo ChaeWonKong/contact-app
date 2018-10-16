@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactMarkdown from "react-markdown";
 import postPath from "../posts/2018-10-13.md";
+import Layout from "../components/Layout";
 
 class PostDetail extends Component {
   constructor(props) {
@@ -18,11 +19,13 @@ class PostDetail extends Component {
   }
 
   render() {
+    console.log(this.state.text);
     return (
-      <div>
-        <p>this is a Post detail</p>
-        <ReactMarkdown source={this.state.text} escapeHtml={false} />
-      </div>
+      <Layout>
+        <div>
+          <ReactMarkdown source={this.state.text} escapeHtml={false} />
+        </div>
+      </Layout>
     );
   }
 }
