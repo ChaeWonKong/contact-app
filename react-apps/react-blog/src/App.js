@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
-
 import "./App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import PostList from "./pages/PostList";
 
 class App extends Component {
   render() {
