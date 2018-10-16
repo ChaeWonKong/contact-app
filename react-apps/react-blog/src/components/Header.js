@@ -17,13 +17,13 @@ class Header extends Component {
                 <Link to="/about">ABOUT</Link>
               </li>
               <li>
-                <Link to="/">DEVLOG</Link>
+                <Link to="/devlogs">DEVLOG</Link>
               </li>
               <li>
-                <Link to="/">ALGORITHM</Link>
+                <Link to="/algorithms">ALGORITHM</Link>
               </li>
               <li>
-                <Link to="/">PROJECTS</Link>
+                <Link to="/projects">PROJECTS</Link>
               </li>
             </ul>
           </div>

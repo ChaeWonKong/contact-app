@@ -10,7 +10,7 @@ const Layout = ({ children }) => (
       <div className="layout-children">
         <div className="input-field col s12">
           <input id="search" type="text" class="validate" />
-          <label for="search">Search</label>
+          <label for="search">Search Posts</label>
         </div>
         {children}
       </div>
