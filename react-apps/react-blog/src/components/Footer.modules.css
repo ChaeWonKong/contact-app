@@ -1,11 +1,12 @@
 .page-footer {
+    position: absolute;
+    left: 0;
     bottom: 0;
-    position: fixed;
     width: 100%;
     background: #eee;
     color: black;
     margin-top: 50px;
-    position: relative;
+    display: block;
 }
 
 .footer-ul {
