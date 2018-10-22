@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import DB from "../db/db.json";
 import uuidv1 from "uuid/v1";
-import fs from "fs";
+const fs = require("fs");
 
 class CreatePost extends Component {
   state = {
@@ -30,10 +30,9 @@ class CreatePost extends Component {
     });
   }
   render() {
-    console.log(this.state);
     return (
       <div>
-        <form onsubmit={this.onSubmit.bind(this)}>
+        <form onSubmit={this.onSubmit.bind(this)}>
           <input
             type="text"
             onChange={event =>
