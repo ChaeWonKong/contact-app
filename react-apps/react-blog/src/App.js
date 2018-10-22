@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import PostDetail from "./pages/PostDetail";
+import CreatePost from "./components/CreatePost";
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/posts" component={PostDetail} />
+        <Route path="/new" component={CreatePost} />
       </div>
     );
   }
