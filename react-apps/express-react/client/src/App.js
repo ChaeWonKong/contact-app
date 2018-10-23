@@ -14,9 +14,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Users</h1>
-        {this.state.users.map(user => (
-          <div key={user.id}>{user.name}</div>
-        ))}
+        <ul>
+          {this.state.users.map(user => (
+            <li key={user.id}>{user.username}</li>
+          ))}
+        </ul>
       </div>
     );
   }
