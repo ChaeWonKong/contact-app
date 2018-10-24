@@ -11,6 +11,10 @@ app.get("/posts/:pageId", (req, res) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.send("Hello Express Server~ Please go to /posts/0");
+});
+
 app.post("/new");
 
 const PORT = process.env.PORT || 5000;
