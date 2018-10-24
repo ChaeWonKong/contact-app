@@ -16,18 +16,6 @@ class CreatePost extends Component {
       date: new Date().toLocaleString(),
       id: uuidv1
     });
-
-    fs.readFile("../db/db.json", (err, data) => {
-      if (err) throw err;
-      let jsonData = JSON.stringify(this.state);
-
-      fs.writeFile("../db/db.json", jsonData, err => {
-        if (err) throw err;
-        this.setState({
-          ...JSON.stringify(jsonData)
-        });
-      });
-    });
   }
   render() {
     return (
