@@ -1,0 +1,15 @@
+{
+  "name": "blog-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "uuidv1": "^1.6.14"
+  }
+}

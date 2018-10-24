@@ -1,0 +1,12 @@
+{
+    "posts": [
+        {
+            "id": "1",
+            "title": "First log",
+            "date": "2018-10-24",
+            "text": "First log text",
+            "likes": "0",
+            "comments": []
+        }
+    ]
+}
