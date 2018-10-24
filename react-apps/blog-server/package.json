@@ -2,12 +2,16 @@
   "name": "blog-server",
   "version": "1.0.0",
   "main": "index.js",
-  "engines": {},
+  "engines": {
+    "node": "8.11.3",
+    "npm": "6.4.1"
+  },
   "scripts": {
     "start": "node index.js"
   },
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "lodash": "^4.17.11",
     "uuidv1": "^1.6.14"

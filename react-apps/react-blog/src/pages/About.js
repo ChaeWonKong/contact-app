@@ -7,30 +7,33 @@ class About extends Component {
     return (
       <Layout>
         <div>
-          About me. About me. About me. About me. About me. About me. About me.
-          About me. About me. About me. About me. About me.About me.About me.
-          About me. About me. About me. About me. About me. About me. About me.
-          About me. About me. About me. About me. About me. About me. About me.
-          About me. About me.About me.About me. About me. About me. About me.
-          About me. About me. About me. About me. About me. About me. About me.
-          About me. About me. About me. About me. About me. About me.About
-          me.About me. About me. About me. About me. About me. About me. About
-          me. About me. About me. About me. About me. About me. About me. About
-          me. About me. About me. About me.About me.About me. About me. About
-          me. About me. About me. About me. About me. About me. About me. About
-          me. About me. About me. About me. About me. About me. About me. About
-          me.About me.About me. About me. About me. About me. About me. About
-          me. About me. About me. About me. About me. About me. About me. About
-          me. About me. About me. About me. About me.About me.About me. About
-          me. About me. About me. About me. About me. About me. About me. About
-          me. About me. About me. About me. About me. About me. About me. About
-          me. About me.About me.About me. About me. About me. About me. About
-          me. About me. About me. About me. About me. About me. About me. About
-          me. About me. About me. About me. About me. About me.About me.About
-          me. About me. About me. About me. About me. About me. About me. About
-          me. About me. About me. About me. About me. About me. About me. About
-          me. About me. About me.About me.About me. About me. About me. About
-          me. About me.
+          <p>
+            About me. About me. About me. About me. About me. About me. About
+            me. About me. About me. About me. About me. About me.About me.About
+            me. About me. About me. About me. About me. About me. About me.
+            About me. About me. About me. About me. About me. About me. About
+            me. About me. About me. About me.About me.About me. About me. About
+            me. About me. About me. About me. About me. About me. About me.
+            About me. About me. About me. About me. About me. About me. About
+            me. About me.About me.About me. About me. About me. About me. About
+            me. About me. About me. About me. About me. About me. About me.
+            About me. About me. About me. About me. About me. About me.About
+            me.About me. About me. About me. About me. About me. About me. About
+            me. About me. About me. About me. About me. About me. About me.
+            About me. About me. About me. About me.About me.About me. About me.
+            About me. About me. About me. About me. About me. About me. About
+            me. About me. About me. About me. About me. About me. About me.
+            About me. About me.About me.About me. About me. About me. About me.
+            About me. About me. About me. About me. About me. About me. About
+            me. About me. About me. About me. About me. About me. About me.About
+            me.About me. About me. About me. About me. About me. About me. About
+            me. About me. About me. About me. About me. About me. About me.
+            About me. About me. About me. About me.About me.About me. About me.
+            About me. About me. About me. About me. About me. About me. About
+            me. About me. About me. About me. About me. About me. About me.
+            About me. About me.About me.About me. About me. About me. About me.
+            About me.
+          </p>
         </div>
       </Layout>
     );
