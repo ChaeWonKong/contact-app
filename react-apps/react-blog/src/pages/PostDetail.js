@@ -1,30 +1,41 @@
 import React, { Component } from "react";
-import ReactMarkdown from "react-markdown";
-import postPath from "../posts/2018-10-13.md";
 import Layout from "../components/Layout";
 
 class PostDetail extends Component {
-  constructor(props) {
-    super(props);
+  state = {};
 
-    this.state = { text: null };
+  componentDidMount() {
+    this._getPost();
   }
 
-  componentWillMount() {
-    fetch(postPath)
-      .then(res => res.text())
-      .then(text => {
-        this.setState({ text });
-      });
+  _getPost = async () => {
+    const post = await this._fetchPost();
+    this.setState({ ...post });
+  };
+
+  _fetchPost() {
+    return fetch("https://secret-lowlands-17494.herokuapp.com/posts/0")
+      .then(res => res.json())
+      .catch(err => console.log(err));
   }
 
   render() {
-    console.log(this.state.text);
+    const { id, thumbnailImage, title, date, text } = this.state;
     return (
       <Layout>
-        <div>
-          <ReactMarkdown source={this.state.text} escapeHtml={false} />
-        </div>
+        {this.state.id ? (
+          <div>
+            <h1>{title}</h1>
+            <h3>{date}</h3>
+            <img
+              src={`https://secret-lowlands-17494.herokuapp.com/images/${thumbnailImage}`}
+              width="500px"
+            />
+            <p>{text}</p>
+          </div>
+        ) : (
+          <div>loading</div>
+        )}
       </Layout>
     );
   }

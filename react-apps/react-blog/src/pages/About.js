@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 
 class About extends Component {
   render() {
+    console.log(this.state);
     return (
       <Layout>
         <div>

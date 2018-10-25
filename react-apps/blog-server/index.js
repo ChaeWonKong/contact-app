@@ -3,9 +3,11 @@ const app = express();
 const fs = require("fs");
 const _ = require("lodash");
 const path = require("path");
+const cors = require("cors");
 const bodyParser = require("body-parser");
 
 app.use("/images", express.static("images"));
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
