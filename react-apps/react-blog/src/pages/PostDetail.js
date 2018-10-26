@@ -14,13 +14,15 @@ class PostDetail extends Component {
   };
 
   _fetchPost() {
-    return fetch("https://secret-lowlands-17494.herokuapp.com/posts/0")
+    const pageId = this.props.match.params.pageId;
+    return fetch(`https://secret-lowlands-17494.herokuapp.com/posts/${pageId}`)
       .then(res => res.json())
       .catch(err => console.log(err));
   }
 
   render() {
     const { id, thumbnailImage, title, date, text } = this.state;
+    console.log(this.props);
     return (
       <Layout>
         {this.state.id ? (
