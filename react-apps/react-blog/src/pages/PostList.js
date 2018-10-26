@@ -42,7 +42,7 @@ class PostList extends Component {
                     <p className="list-content">{post.text}</p>
                   </div>
                   <div className="card-action">
-                    <a href={`/posts/${post.id}`}>This is a link</a>
+                    <a href={`/posts/${post.id}`}>See Detail</a>
                   </div>
                 </div>
               </div>
