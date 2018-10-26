@@ -22,6 +22,15 @@ app.get("/posts/:pageId", (req, res) => {
   });
 });
 
+app.get("/posts", (req, res) => {
+  fs.readFile("./data/db.json", (err, data) => {
+    if (err) throw err;
+    console.log(data);
+    const posts = JSON.parse(data);
+    res.send(JSON.stringify(posts));
+  });
+});
+
 app.get("/", (req, res) => {
   res.send("Hello Express Server~ Please go to /posts/0");
 });
