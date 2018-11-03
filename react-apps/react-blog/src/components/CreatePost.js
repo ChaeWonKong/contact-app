@@ -1,22 +1,6 @@
 import React, { Component } from "react";
-import DB from "../db/db.json";
-import uuidv1 from "uuid/v1";
-const fs = require("fs");
 
 class CreatePost extends Component {
-  state = {
-    ...JSON.stringify(DB)
-  };
-
-  onSubmit(event) {
-    event.preventDefault();
-
-    this.setState({
-      ...this.state,
-      date: new Date().toLocaleString(),
-      id: uuidv1
-    });
-  }
   render() {
     return (
       <div>
